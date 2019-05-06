@@ -1,6 +1,8 @@
 /* Add your styles here */
 
 
+/* Add your styles here */
+
 .container{
     display: flex;
     flex-direction: column;
@@ -8,6 +10,7 @@
   }
 
   .container-2{
+    margin-top: 26px;
     display: flex;
     flex-direction: row;
   }
@@ -27,7 +30,7 @@
     background: #003387;
     position: absolute;
     transform: scale(1, -1);
-    top: 25px;
+    top: 40px;
     left: 15px;
     box-shadow:
       0 24px #003387,
@@ -46,7 +49,7 @@
     height: 20px;
     background: #003387;
     position: absolute;
-    top: 40px;
+    top: 56px;
     left: 25.5rem;
     border-radius: 30%;
     box-shadow:
@@ -98,7 +101,7 @@
       width:70px;
       height:70px;
       border:8px solid #003387;
-      margin:17.5px 0 0 30px;
+      margin:15px 0 0 30px;
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
