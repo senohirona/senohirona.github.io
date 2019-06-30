@@ -1,0 +1,567 @@
+/* Styles go here */
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.62);
+    }
+
+
+    .sepa{
+      margin-top:200px;
+    }
+
+    .container{
+      display: flex;
+      width: 1000px;
+    }
+
+
+    .display{
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+
+    .date{
+      margin-top: 50px;
+    }
+
+    .time{
+      width: 500px;
+      margin-top: 45px;
+    }
+
+
+    /* -----container----- */
+
+     /*水色部分のあれ*/
+
+      .layer-box{
+        margin-top: 30px;
+        filter: opacity(95%);
+      }
+
+     .layer1{
+      clip-path: polygon(0 0, 70% 0, 70% 44%, 100% 70%, 100% 100%, 50% 100%, 0 74%);
+      width: 85px;
+      height: 206px;
+      background-color: rgba(161, 233, 247, 0.771);
+      position: absolute;
+      z-index: 1;
+      margin-left: 8px;
+      margin-top: -3px;
+      box-shadow: 10rem 10rem 4rem 10rem royalblue;
+     }
+
+
+    .layer1-text{
+      color:  rgba(161, 233, 247, 0.771);
+      background-color: rgb(79, 125, 241);
+      font-size: 14px;
+      writing-mode: vertical-rl;
+      display: inline-block;
+      margin-top: 30px;
+      margin-right: 55px;
+      position: absolute;
+      padding: 4px 0;
+    }
+
+    .layer1-text::before{
+      content: "";
+      position: absolute;
+      background-color: rgb(79, 125, 241);
+      width: 21px;
+      height:5px;
+      margin-top: -14px;
+    }
+
+
+    /*青い枠(右側の幅もう少し広くする必要あり)*/
+    .layer2{
+      clip-path: polygon(0% 0%, 83% 0, 83% 46%, 100% 65%, 100% 100%, 39% 100%, 0 75%);
+      width: 105px;
+      height: 204px;
+      background-color: rgb(79, 125, 241);
+      z-index: 2;
+    }
+
+
+    .test{
+      display: flex;
+      margin-right: 5px;
+      margin-top: -60px;
+    }
+
+    .down-point{
+      clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+      width: 25px;
+      height: 180px;
+      background-color: rgb(116, 153, 244);
+      z-index: 10;
+      margin: 0 5px;
+    }
+
+    .down-point:last-child{
+      margin-right: 5px;
+    }
+
+    .down-point-blue{
+      position: absolute;
+      clip-path: inset(0 0 0 0);
+      width: 30px;
+      height: 90px;
+      background-color: rgb(47, 47, 186);
+      z-index: 20;
+      top: 25%;
+      filter: opacity(80%);
+    }
+
+
+    .down-point-blue::before{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 10px;
+      background-color: rgb(187, 242, 252);
+    }
+
+
+    .down-point-blue::after{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 10px;
+      bottom: -1px;
+      background-color: rgb(187, 242, 252);
+    }
+
+    .down-point-white{
+      background-color: rgb(187, 242, 252);
+      width:10px;
+      height: 5px;
+      margin-top: 25px;
+      filter: opacity(80%);
+    }
+
+    /* -----date----- */
+
+    .date-container{
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .date-left-sqare{
+      width: 33px;
+      height: 145px;
+      margin-right: 5px;
+      margin-top: 50px;
+      background-color: rgba(107, 172, 247);
+      border-left: solid 3px rgb(187, 242, 252);
+    }
+
+    .date-left-sqare-shadow{
+      width: 33px;
+      height: 40px;
+      margin-right: 5px;
+      margin-top: 155px;
+      background-color: royalblue;
+      position: absolute;
+      z-index: 10;
+      border-top: solid 0.5px rgb(187, 242, 252);
+      border-left: solid 3px rgb(187, 242, 252);
+    }
+
+    .date-top-point{
+      width: 500px;
+      height: 5px;
+      background-color: rgb(107, 172, 247);
+      margin-bottom: 2px;
+    }
+
+    .date-top-point-shadow{
+      width: 470px;
+      height: 5px;
+      background-color: royalblue;
+      opacity:0.5;
+    }
+
+    .date-top-point-sqare-container{
+      display: flex;
+      justify-content: space-between;
+      z-index: 0;
+    }
+
+    .date-top-point-sqare-container-box{
+      width: 15px;
+      height: 20x;
+    }
+
+    .date-top-point-sqare{
+      width: 15px;
+      height: 15px;
+      background-color: royalblue;
+      border-radius: 10%;
+    }
+
+    .date-top-point-sqare-circle{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      z-index: 2;
+      margin-left: 4px;
+      margin-top: 1.5px;
+      background: radial-gradient(rgb(246, 212, 198), rgb(251, 0, 4));
+    }
+
+    .date-top-point-sqare-aqua{
+      width: 5px;
+      height: 5px;
+      background-color: rgba(107, 172, 247);
+      position: absolute;
+      z-index: 2;
+      margin-top: 10px;
+      margin-left: 10px;
+      opacity:0.9;
+    }
+
+
+    .date-under-point{
+      width: 500px;
+      height: 20px;
+      background-color: royalblue;
+      margin-bottom: 2px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 65%);
+      background: linear-gradient(to top, #a8c0ff, royalblue);
+    }
+
+    .year{
+      display: flex;
+      justify-content: flex-start;
+      height: 110px;
+    }
+
+    .js-year{
+      font-family: 'Nova Square';
+      font-size: 90px;
+      color: rgb(78, 254, 178);
+      margin-bottom: 20px;
+    }
+
+    .year-plate::before{
+      width: 70px;
+      height: 100px;
+      margin-top: 1px;
+      clip-path: polygon(41% 0, 100% 0, 60% 100%, 0 100%, 0 95%);
+      background-color: #7499f4;
+    }
+
+    .year-plate{
+      width: 70px;
+      height: 100px;
+      margin-top: 1px;
+      clip-path: polygon(41% 0, 100% 0, 60% 100%, 0 100%, 0 95%);
+      background-color: #7499f4;
+    }
+
+    .year-plate::before{
+      content: "";
+      position: absolute;
+      width: 136px;
+      height: 184px;
+      margin-top: 1px;
+      clip-path: polygon(41% 0, 100% 0, 60% 100%, 0 100%, 0 95%);
+      background-color: rgba(184, 236, 246, 0.956);
+      z-index: -1;
+    }
+
+    .year-plate::after{
+      content: "";
+      width: 50px;
+      height: 100px;
+      margin-left: 30px;
+      position: absolute;
+      clip-path: polygon(60% 0%, 80% 0, 24% 100%, 0% 100%);
+      background-color: royalblue;
+    }
+
+    .day{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .day-plate-top{
+      width: 205px;
+      height: 20px;
+      margin-top: 1px;
+      background-color: #7499f4;
+      clip-path: polygon( 3% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .js-day{
+      font-family: 'Nova Square';
+      font-size: 60px;
+      color: rgb(78, 254, 178);
+    }
+
+    .day-plate{
+      width: 50px;
+      height: 75px;
+      margin-top: 5px;
+      clip-path: polygon(41% 0, 100% 0, 60% 100%, 0 100%, 0 95%);
+      background-color: #7499f4;
+    }
+
+    .day-plate::before{
+      content: "";
+      position: absolute;
+      width: 95px;
+      height: 150px;
+      margin-top: 1px;
+      clip-path: polygon(41% 0, 100% 0, 60% 100%, 0 100%, 0 95%);
+      background-color: rgba(184, 236, 246, 0.956);
+      z-index: -1;
+    }
+
+    .day-plate::after{
+      content: "";
+      width: 30px;
+      height: 75px;
+      margin-left: 20px;
+      position: absolute;
+      clip-path: polygon(70% 0, 100% 0, 60% 100%, 0 100%, 0 100%);
+      /* clip-path: polygon(60% 0%, 80% 0, 24% 100%, 0% 100%); */
+      background-color: royalblue;
+    }
+
+    .down-point-date-container{
+      height: 90px;
+      display: flex;
+    }
+
+    .down-point-date{
+      clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+      width: 25px;
+      height: 180px;
+      background-color: rgb(116, 153, 244);
+      z-index: 10;
+      margin: 0 5px;
+    }
+
+    .down-point-date-blue{
+      position: absolute;
+      clip-path: inset(0 0 0 0);
+      width: 30px;
+      height: 90px;
+      background-color: rgb(47, 47, 186);
+      z-index: 20;
+      margin-top: 65px;
+      filter: opacity(80%);
+    }
+
+
+    .down-point-date-blue::before{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 10px;
+      background-color: rgb(187, 242, 252);
+    }
+
+    .down-point-date-blue::after{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 10px;
+      bottom: -1px;
+      background-color: rgb(187, 242, 252);
+    }
+
+
+
+
+    /* -------下のflex使いづらそうなパーツ */
+
+    .bottom-parts{
+      width: 745px;
+      height: 25px;
+      background-color: #7499f4;
+      clip-path: polygon(16% 0, 19% 25%, 100% 33%, 100% 100%, 0 100%, 0 0);
+      bottom: 0;
+      position: absolute;
+      margin-left: 105px;
+      margin-bottom: 8px;
+    }
+
+    .bottom-parts-aqua{
+      position: absolute;
+      z-index: 2;
+      width: 35px;
+      height: 15px;
+      margin-left: 3.5px;
+      margin-top: 4px;
+      background-color: rgba(161, 233, 247, 0.771);
+    }
+
+    .bottom-parts-blue{
+      color: rgba(161, 233, 247, 0.771);
+      position: absolute;
+      font-size: 9px;
+      z-index: 3;
+      width: 70px;
+      height: 15px;
+      margin-left: 50px;
+      margin-top: 4px;
+      background-color: royalblue;
+    }
+
+    .bottom-parts-blue::after{
+      content: "";
+      position:absolute;
+      width:8px;
+      height: 8px;
+      background-color: #cb045d;
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-top: 4px;
+    }
+
+    .bottom-parts-red{
+      width: 10px;
+      height:25px;
+      background-color: #cb045d;
+      position: absolute;
+      content: "";
+      z-index: 1;
+      margin-right: 25px;
+      right: 0;
+    }
+
+    .bottom-parts::after{
+      width: 10px;
+      height:25px;
+      background-color:#cb045d;
+      position: absolute;
+      content: "";
+      right: 0;
+    }
+
+
+    /* -------time--------- */
+
+
+    /* 上のパーツ */
+    .time-top{
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .top-point{
+      clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 100%, 43% 100%, 33% 76%, 32% 26%, 0 25%);
+
+      width: 290px;
+      height: 20px;
+      background-color: rgb(107, 172, 247);
+    }
+
+    .top-point-shadow{
+      position: absolute;
+      z-index: -1;
+      clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 100%, 43% 100%, 33% 76%, 32% 26%, 0 25%);
+      width: 280px;
+      height: 20px;
+      margin-top: 10px;
+      background-color: royalblue;
+      filter: opacity(60%)
+    }
+
+    .top-point-2{
+      clip-path: polygon(33% 0, 40% 0, 67% 100%, 59% 100%, 37% 20%, 0 20%, 0 0);
+      width: 90px;
+      height: 25px;
+      background-color: royalblue;
+      margin: 5px;
+    }
+
+    /* 真ん中のパーツ */
+
+    .time-center{
+      display: flex;
+      justify-content: space-around;
+      width: 390px;
+    }
+
+    .center-sqare-right{
+      width: 40px;
+      height: 100px;
+      background-color: royalblue;
+      background: linear-gradient(to right, #a8c0ff, royalblue);
+    }
+
+    .center-sqare-left{
+      width: 40px;
+      height: 100px;
+      background-color: royalblue;
+      background: linear-gradient(to left, #a8c0ff, royalblue);
+    }
+
+
+
+    .js-time{
+      font-family: 'Nova Square';
+      font-size: 75px;
+      color: rgb(78, 254, 178);
+    }
+
+    /* 下のパーツ */
+
+    .time-bottom{
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 90px;
+    }
+
+    .bottom-point{
+      clip-path: polygon(89% 68%, 89% 0, 100% 0, 100% 71%, 66% 100%, 0 100%, 0 92%, 61% 92%);
+      width: 40px;
+      height: 30px;
+      background-color: royalblue;
+      margin-right: 25px;
+      margin-left: 10px;
+    }
+
+    .bottom-sqare{
+      width: 220px;
+      height: 40px;
+      background-color: #a8c0ff;
+    }
+
+    .bottom-sqare::before{
+      content: "";
+      position: absolute;
+      /* clip-path: polygon(0% 0%, 0% 100%, 2% 100%, 2% 9%, 98% 9%, 98% 91%, 1% 91%, 1% 100%, 100% 100%, 100% 0%); */
+      height:32px;
+      width: 160px;
+      margin-left: 55px;
+      margin-top: 3px;
+      margin-right: 10px;
+      background-color: cyan;
+      background: repeating-linear-gradient(to right, rgb(187, 242, 252),rgb(187, 242, 252), 3px,  #a8c0ff 3px,  #a8c0ff 4px);
+    }
+
+    .sqare-panel-1{
+      clip-path: polygon(0 42%, 0 0, 100% 0, 100% 50%, 85% 62%, 73% 70%, 73% 100%, 0 100%);
+      height: 40px;
+      width: 50px;
+      background-color: royalblue;
+    }
+
+    .sqare-panel-1::before{
+      content: "";
+      position: absolute;
+      background-color:  rgb(187, 242, 252);
+      height: 45px;
+      width: 10px;
+    }
