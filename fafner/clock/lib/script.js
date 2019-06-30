@@ -1,12 +1,12 @@
 // Add your code here
 
-var nowTime = new Date(); //  現在日時を得る
-var nowYear = nowTime.getFullYear(); //年を抜き出す
-var nowMonth =  nowTime.getMonth() + 1; //月を抜き出す(0～11で数値が取得されるので、+1する必要がある)
-var nowDay = nowTime.getDate(); //日を抜き出す
-var nowHour = nowTime.getHours(); // 時を抜き出す
-var nowMin  = nowTime.getMinutes(); // 分を抜き出す
-var nowSec  = nowTime.getSeconds(); // 秒を抜き出す
+var nowTime = new Date();
+var nowYear = nowTime.getFullYear();
+var nowMonth =  nowTime.getMonth() + 1;
+var nowDay = nowTime.getDate();
+var nowHour = nowTime.getHours();
+var nowMin  = nowTime.getMinutes();
+var nowSec  = nowTime.getSeconds();
 
 
 if (nowMonth < 10) nowMonth = "0" + nowMonth;
