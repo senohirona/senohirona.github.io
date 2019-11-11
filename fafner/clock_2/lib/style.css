@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'fafner-number-fonts';
-  src: url('./fonts/Fafner_number-Regular-test-8.ttf') format('truetype');
+  src: url('fonts/Fafner_number-Regular-test-8.ttf') format('truetype');
 }
 
 body {
