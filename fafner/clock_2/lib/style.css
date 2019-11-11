@@ -362,7 +362,7 @@ body {
     }
 
     .js-year{
-      font-family: 'fafner-number-fonts';
+      /* font-family: 'fafner-number-fonts'; */
       font-size:83px;
       background: linear-gradient(0deg,#11FFBD, #bafad9 70%);
       -webkit-background-clip: text;
