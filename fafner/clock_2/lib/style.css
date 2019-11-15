@@ -1,10 +1,8 @@
 /* Styles go here */
 @import url('https://fonts.googleapis.com/css?family=Duru+Sans&display=swap');
-
-
 @font-face {
   font-family: 'fafner-number-fonts';
-  src: url('./fonts/Fafner_number-Regular-test-8.ttf') format('truetype');
+  src: url('./fonts/Fafner_number-Regular.ttf') format('truetype');
 }
 
 body {
@@ -13,23 +11,16 @@ body {
     -webkit-user-select: none;
     }
 
-
-.sepa{
-  margin-top:200px;
-}
-
 .container{
   display: flex;
   width: 800px;
 }
-
 
 .display{
   display: flex;
   align-items: center;
   position: relative;
 }
-
 
 .date{
   margin-top: 50px;
@@ -61,7 +52,6 @@ body {
   margin-top: -3px;
   box-shadow: 10rem 10rem 4rem 10rem royalblue;
   }
-
 
 .layer1-text{
   color:  rgba(161, 233, 247, 0.771);
@@ -95,7 +85,7 @@ body {
   z-index: 2;
 }
 
-.test{
+.display2{
   display: flex;
 }
 
@@ -131,7 +121,6 @@ body {
   height: 8px;
   background-color: rgb(187, 242, 252);
 }
-
 
 .down-point-blue::after{
   position: absolute;
@@ -226,7 +215,6 @@ body {
     margin-top: 30px;
     padding-left: 5px;
     color: #a8c0ff;
-    /* color: #cb045d; */
     font-size: 7px;
 }
 
@@ -746,7 +734,6 @@ body {
   background: linear-gradient(to right, #a8c0ff, royalblue);
 }
 
-
 .center-sqare-left-shadow{
     width: 32px;
     height: 80px;
@@ -781,7 +768,6 @@ body {
 .js-time-container{
     height: 50px;
     width: 90px;
-    /* margin: 10px; */
     text-align:left;
     float:right;
 }
