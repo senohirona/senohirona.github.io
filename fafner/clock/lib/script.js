@@ -20,6 +20,3 @@ document.getElementById("RealtimeYear").innerHTML = nowYear;
 document.getElementById("RealtimeMonth").innerHTML = nowMonth;
 document.getElementById("RealtimeDay").innerHTML = nowDay;
 document.getElementById("RealtimeHour").innerHTML = msg;
-
-
-
