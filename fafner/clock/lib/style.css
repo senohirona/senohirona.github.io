@@ -31,7 +31,7 @@ body {
 /* -----container----- */
 /*水色部分のあれ*/
 .layer-box {
-  margin-top: 42px;
+  margin-top: 50px;
   filter: opacity(95%);
 }
 
@@ -502,9 +502,9 @@ body {
 .bottom-parts {
   position: absolute;
   bottom: 0;
-  width: 604px;
+  width: 585px;
   height: 13px;
-  margin-bottom: 3px;
+  margin-bottom: 11px;
   margin-left: 75px;
   background-color: #7499f4;
   clip-path: polygon(16% 0, 19% 25%, 100% 33%, 100% 100%, 0 100%, 0 0);
@@ -547,9 +547,9 @@ body {
   position: absolute;
   right: 0;
   z-index: 1;
-  width: 10px;
+  width: 5px;
   height: 25px;
-  margin-right: 25px;
+  margin-right: 11px;
   content: "";
   background-color: #cb045d;
 }
@@ -557,10 +557,23 @@ body {
 .bottom-parts::after {
   position: absolute;
   right: 0;
-  width: 10px;
+  width: 5px;
   height: 25px;
   content: "";
   background-color: #cb045d;
+}
+
+.bottom-parts-shadow {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 585px;
+  height: 13px;
+  margin-bottom: 5px;
+  margin-left: 65px;
+  background-color: royalblue;
+  clip-path: polygon(16% 0, 19% 25%, 100% 33%, 100% 100%, 0 100%, 0 0);
+  filter: opacity(60%);
 }
 
 /* -------time--------- */
@@ -601,7 +614,7 @@ body {
   );
   width: 224px;
   height: 16px;
-  margin-top: 8px;
+  margin-top: 7px;
   background-color: royalblue;
   filter: opacity(60%);
 }
@@ -775,7 +788,7 @@ body {
 .time-bottom {
   display: flex;
   justify-content: flex-start;
-  margin-left: 72px;
+  margin-left: 60px;
 }
 
 .bottom-point {
@@ -818,7 +831,7 @@ body {
 }
 
 .bottom-square {
-  width: 176px;
+  width: 182px;
   height: 32px;
   background-color: #a8c0ff;
 }
@@ -836,7 +849,7 @@ body {
 
 .bottom-square::before {
   position: absolute;
-  width: 128px;
+  width: 134px;
   height: 25.6px;
   margin-top: 3px;
   margin-right: 8px;
