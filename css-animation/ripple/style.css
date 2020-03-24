@@ -1,0 +1,34 @@
+html,
+body {
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.circle {
+  width: 50%;
+  height: 50%;
+  border: solid thin black;
+  border-radius: 50%;
+
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
