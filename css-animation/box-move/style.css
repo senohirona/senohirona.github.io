@@ -1,0 +1,27 @@
+
+# アニメーションを表示する疑似要素を表示するための土台
+.box{
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+}
+
+/* 疑似要素にアニメーションを追加して動かしている */
+.box::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation:slide 0.9s infinite ease-in-out 0s both;
+  background-color: aqua;
+}
+
+@keyframes slide {
+  0%{
+    /* translateX()...x軸(横軸)への移動を設定する */
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
