@@ -1,5 +1,5 @@
 
-# アニメーションを表示する疑似要素を表示するための土台
+/* アニメーションを表示する疑似要素を表示するための土台 */
 .box{
   width: 500px;
   height: 100px;
@@ -17,6 +17,60 @@
 }
 
 @keyframes slide {
+  0%{
+    /* translateX()...x軸(横軸)への移動を設定する */
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+
+.box_2{
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.box_2::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  z-index: 10;
+  background-color: aquamarine;
+  animation: slide_2 1.3s 3s ease;
+}
+
+.box_2::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  z-index: 10;
+  background-color: yellow;
+  animation: slide_3 1s 3.6s ease;
+}
+
+@keyframes slide_2 {
+  0%{
+    /* translateX()...x軸(横軸)への移動を設定する */
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+
+@keyframes slide_3 {
   0%{
     /* translateX()...x軸(横軸)への移動を設定する */
     transform: translateX(-100%);
