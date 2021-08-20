@@ -1,81 +1,51 @@
-
 /* アニメーションを表示する疑似要素を表示するための土台 */
-.box{
+.box {
   width: 500px;
   height: 100px;
   overflow: hidden;
 }
 
 /* 疑似要素にアニメーションを追加して動かしている */
-.box::after{
+.box::after {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
-  animation:slide 0.9s infinite ease-in-out 0s both;
-  background-color: aqua;
+  animation: slide 0.9s infinite ease-in-out 0s both;
+  background-color: aquamarine;
 }
 
 @keyframes slide {
-  0%{
+  0% {
     /* translateX()...x軸(横軸)への移動を設定する */
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(100%);
   }
 }
 
-
-.box_2{
-  display: inline-block;
-  position: relative;
+.box_2 {
   width: 500px;
   height: 100px;
   overflow: hidden;
 }
 
-.box_2::after{
+.box_2::after {
   content: "";
   display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 0;
-  z-index: 10;
-  background-color: aquamarine;
-  animation: slide_2 1.3s 3s ease;
-}
-
-.box_2::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 0;
-  z-index: 10;
+  width: 100%;
+  height: 100%;
   background-color: yellow;
-  animation: slide_3 1s 3.6s ease;
+  animation: slide_2 0.9s infinite ease-in-out 0s both;
 }
 
 @keyframes slide_2 {
-  0%{
-    /* translateX()...x軸(横軸)への移動を設定する */
-    transform: translateX(-100%);
-  }
-  100%{
+  0% {
+    /* translateXを反対方向に設定*/
     transform: translateX(100%);
   }
-}
-
-
-@keyframes slide_3 {
-  0%{
-    /* translateX()...x軸(横軸)への移動を設定する */
+  100% {
     transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(100%);
   }
 }
